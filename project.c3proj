@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 41600,
+	"savedWithRelease": 41602,
 	"name": "Jejak Nelayan",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -70,7 +70,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"Main Menu"
 		],
 		"subfolders": []
 	},
