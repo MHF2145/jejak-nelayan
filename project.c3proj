@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 41600,
+	"savedWithRelease": 41602,
 	"name": "Jejak Nelayan",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -56,7 +56,13 @@
 			"barspawn",
 			"fishprogg",
 			"maxh",
-			"minh"
+			"minh",
+			"Asset",
+			"Asset2",
+			"Asset3",
+			"Asset4",
+			"BigBoard_",
+			"Asset5"
 		],
 		"subfolders": []
 	},
