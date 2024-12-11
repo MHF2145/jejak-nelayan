@@ -52,6 +52,36 @@
 			"sid": 843739637618239
 		},
 		{
+			"eventType": "variable",
+			"name": "Tongkol",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 500379190837114
+		},
+		{
+			"eventType": "variable",
+			"name": "Kerapu",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 161864710235458
+		},
+		{
+			"eventType": "variable",
+			"name": "Salmon",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 598295679885341
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -126,6 +156,11 @@
 				},
 				{
 					"id": "destroy",
+					"objectClass": "fishing_bar",
+					"sid": 460415430318572
+				},
+				{
+					"id": "destroy",
 					"objectClass": "gachafish",
 					"sid": 809034452797661
 				},
@@ -144,6 +179,24 @@
 					"sid": 444574221792265,
 					"parameters": {
 						"text": "\"Timer: \" & reeltime"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 646647533492717,
+					"parameters": {
+						"variable": "Caught",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "fishplaceholder",
+					"sid": 644482282410766,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -301,6 +354,15 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "fishplaceholder",
+					"sid": 831973470209835,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 102089277856584
@@ -341,7 +403,7 @@
 					"sid": 622134636924447,
 					"disabled": true,
 					"parameters": {
-						"object": "Nila",
+						"object": "Kerapu",
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false,
@@ -356,6 +418,15 @@
 					"parameters": {
 						"variable": "RN",
 						"value": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "fishplaceholder",
+					"sid": 774647843093881,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -397,7 +468,7 @@
 					"sid": 255973089877460,
 					"disabled": true,
 					"parameters": {
-						"object": "Mujaer",
+						"object": "Tongkol",
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false,
@@ -412,6 +483,15 @@
 					"parameters": {
 						"variable": "RN",
 						"value": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "fishplaceholder",
+					"sid": 196121475282351,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -1146,30 +1226,15 @@
 				{
 					"id": "set-animation",
 					"objectClass": "fish",
-					"sid": 440059637343061,
+					"sid": 242383306242088,
 					"parameters": {
-						"animation": "\"Default\"",
+						"animation": "\"Animation 1\"",
 						"from": "beginning"
 					}
 				},
 				{
 					"id": "destroy",
-					"objectClass": "reelbar",
-					"sid": 439891832348755
-				},
-				{
-					"id": "destroy",
-					"objectClass": "fishreel",
-					"sid": 882736411015241
-				},
-				{
-					"id": "destroy",
-					"objectClass": "reelblock",
-					"sid": 760420190710940
-				},
-				{
-					"id": "destroy",
-					"objectClass": "reelprog",
+					"objectClass": "fishing_bar",
 					"sid": 820544878525113
 				}
 			],
@@ -1195,7 +1260,7 @@
 					"objectClass": "fishplaceholder",
 					"sid": 528294099534220,
 					"parameters": {
-						"object": "Koi",
+						"object": "Salmon",
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false,
@@ -1218,6 +1283,15 @@
 					"parameters": {
 						"variable": "fishprog",
 						"value": "50"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 780158550315508,
+					"parameters": {
+						"variable": "Salmon",
+						"value": "1"
 					}
 				}
 			],
@@ -1243,7 +1317,7 @@
 					"objectClass": "fishplaceholder",
 					"sid": 748596776086399,
 					"parameters": {
-						"object": "Nila",
+						"object": "Kerapu",
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false,
@@ -1266,6 +1340,15 @@
 					"parameters": {
 						"variable": "fishprog",
 						"value": "50"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 354467044199142,
+					"parameters": {
+						"variable": "Kerapu",
+						"value": "1"
 					}
 				}
 			],
@@ -1291,7 +1374,7 @@
 					"objectClass": "fishplaceholder",
 					"sid": 422509350551062,
 					"parameters": {
-						"object": "Mujaer",
+						"object": "Tongkol",
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false,
@@ -1314,6 +1397,15 @@
 					"parameters": {
 						"variable": "fishprog",
 						"value": "50"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 118086025652044,
+					"parameters": {
+						"variable": "Tongkol",
+						"value": "1"
 					}
 				}
 			],
@@ -1341,23 +1433,8 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "reelbar",
-					"sid": 205123051440026
-				},
-				{
-					"id": "destroy",
-					"objectClass": "fishreel",
-					"sid": 223968625421698
-				},
-				{
-					"id": "destroy",
-					"objectClass": "reelblock",
-					"sid": 827583801452425
-				},
-				{
-					"id": "destroy",
-					"objectClass": "reelprog",
-					"sid": 283373565439756
+					"objectClass": "fishing_bar",
+					"sid": 306923738169728
 				}
 			],
 			"sid": 163274866407756

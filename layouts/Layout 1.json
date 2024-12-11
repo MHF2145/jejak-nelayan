@@ -447,46 +447,6 @@
 					}
 				},
 				{
-					"type": "seawave",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 2",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 44,
-					"sid": 487578103587968,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 487578103587968,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 0,
-						"y": 435,
-						"width": 854,
-						"height": 203,
-						"originX": 0,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "fishplaceholder",
 					"properties": {
 						"initially-visible": true,
@@ -514,8 +474,8 @@
 						"y": 212.52371962112898,
 						"width": 132,
 						"height": 132,
-						"originX": 0.48484848484848486,
-						"originY": 0.48484848484848486,
+						"originX": 0.5216131907308378,
+						"originY": 0.5216131907308378,
 						"color": [
 							1,
 							1,
@@ -527,7 +487,7 @@
 					}
 				},
 				{
-					"type": "Koi",
+					"type": "Salmon",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -569,7 +529,7 @@
 					}
 				},
 				{
-					"type": "Nila",
+					"type": "Kerapu",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -611,7 +571,7 @@
 					}
 				},
 				{
-					"type": "Mujaer",
+					"type": "Tongkol",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -792,8 +752,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 447.90312881627557,
-						"y": 224.3036157410679,
+						"x": 736,
+						"y": 225,
 						"width": 26,
 						"height": 26,
 						"originX": 0.5,
@@ -888,8 +848,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 436.894871273352,
-						"y": 129.10465394113587,
+						"x": 725,
+						"y": 130,
 						"width": 175,
 						"height": 14,
 						"originX": 0.4228571428571429,
@@ -928,8 +888,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 461.9414193577351,
-						"y": 344.5823311661184,
+						"x": 750,
+						"y": 346,
 						"width": 175,
 						"height": 14,
 						"originX": 0.5028571428571429,
@@ -953,7 +913,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 15,
+					"uid": 49,
 					"sid": 545243198154877,
 					"tags": "",
 					"instanceVariables": {},
@@ -993,7 +953,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 17,
+					"uid": 42,
 					"sid": 733000872984113,
 					"tags": "",
 					"instanceVariables": {},
@@ -1033,7 +993,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 18,
+					"uid": 46,
 					"sid": 744447232409598,
 					"tags": "",
 					"instanceVariables": {},
@@ -1073,7 +1033,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 19,
+					"uid": 47,
 					"sid": 781197973310376,
 					"tags": "",
 					"instanceVariables": {},
@@ -1113,7 +1073,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 20,
+					"uid": 48,
 					"sid": 732245761889379,
 					"tags": "",
 					"instanceVariables": {},
@@ -1128,8 +1088,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -217,
-						"y": 544,
+						"x": -279,
+						"y": 579,
 						"width": 237,
 						"height": 175,
 						"originX": 0.5,
@@ -1203,6 +1163,81 @@
 				1
 			],
 			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Layer 1",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "seawave",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 2",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 44,
+					"sid": 487578103587968,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 487578103587968,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 0,
+						"y": 435,
+						"width": 854,
+						"height": 203,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.75
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 736215506010687,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,

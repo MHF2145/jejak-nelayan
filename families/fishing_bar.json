@@ -1,13 +1,14 @@
 {
-	"name": "gachafish",
+	"name": "fishing_bar",
 	"plugin-id": "Sprite",
-	"sid": 889475161543003,
+	"sid": 281643645958414,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"Salmon",
-		"Tongkol",
-		"Kerapu"
+		"reelprog",
+		"reelbar",
+		"reelblock",
+		"fishreel"
 	]
 }
