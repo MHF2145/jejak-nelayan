@@ -83,7 +83,25 @@
 			"quitmenu",
 			"PlayText",
 			"Quittext",
-			"Browser"
+			"Browser",
+			"Asset",
+			"Asset2",
+			"Asset3",
+			"Asset4",
+			"BigBoard_",
+			"Asset5",
+			"background_sky",
+			"background_sand",
+			"background_ocean",
+			"background_clouds_medium",
+			"background_clouds_medium2",
+			"background_clouds_big",
+			"Fishing_hut",
+			"Boat",
+			"vegetation_tree_palm",
+			"Tong_ikan",
+			"Icons_",
+			"seawave"
 		],
 		"subfolders": []
 	},
@@ -98,7 +116,8 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"Main Menu"
+			"Main Menu",
+			"Layout 2"
 		],
 		"subfolders": []
 	},
