@@ -1,0 +1,67 @@
+{
+	"name": "Nila",
+	"plugin-id": "Sprite",
+	"sid": 685261254335976,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "rate",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 271183367689691
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 22,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.47368421052631576,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6429851,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.23545706371191133
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 454247322587342,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

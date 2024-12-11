@@ -1,0 +1,1362 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "RN",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 502220828245978
+		},
+		{
+			"eventType": "variable",
+			"name": "reeltime",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 494291572808087
+		},
+		{
+			"eventType": "variable",
+			"name": "fishprog",
+			"type": "number",
+			"initialValue": "50",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 134282231187340
+		},
+		{
+			"eventType": "variable",
+			"name": "success",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 539343365940347
+		},
+		{
+			"eventType": "variable",
+			"name": "Caught",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 843739637618239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 839210134193943,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "double-clicked"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 404321783207166,
+					"parameters": {
+						"animation": "\"reeled\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 579265771508851,
+					"parameters": {
+						"animation": "\"reeling\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 992730739148248,
+					"parameters": {
+						"value": "RN = 1"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 545732014143933,
+					"parameters": {
+						"value": "RN = 2"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 550781164617710,
+					"parameters": {
+						"value": "RN = 3"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 797587851277620,
+					"parameters": {
+						"animation": "\"cast\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "fish",
+					"sid": 501301875077183
+				},
+				{
+					"id": "destroy",
+					"objectClass": "gachafish",
+					"sid": 809034452797661
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 452366692057750,
+					"parameters": {
+						"variable": "reeltime",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 444574221792265,
+					"parameters": {
+						"text": "\"Timer: \" & reeltime"
+					}
+				}
+			],
+			"sid": 116608567924110
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 426712638033755,
+					"parameters": {
+						"interval-seconds": "Random(3, 10)"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 380437598675985,
+					"parameters": {
+						"animation": "\"reeled\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 503859584746610,
+					"parameters": {
+						"animation": "\"cast\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 723463454871863,
+					"parameters": {
+						"animation": "\"reeled\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 315075479036354
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 603577270031743
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 279682616819421
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 850920582082117,
+					"parameters": {
+						"animation": "\"reeled\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 939987261601369,
+					"parameters": {
+						"variable": "RN",
+						"value": "(random(100) < 25) ? 1 : (random(100) < 65) ? 2 : 3\n"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 864359759689197,
+					"parameters": {
+						"animation": "\"reeling\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player",
+					"sid": 899523758375164,
+					"parameters": {
+						"object": "fish",
+						"layer": "0",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "gachaRate",
+					"sid": 666287120102838,
+					"parameters": {
+						"text": "\"FIsh Rate: \" & RN"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 550825048686367,
+					"parameters": {
+						"variable": "reeltime",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 191087074557596,
+					"parameters": {
+						"text": "\"Timer: \" & reeltime"
+					}
+				}
+			],
+			"sid": 783159312144999
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "fish",
+					"sid": 432624442056978
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 808567418968589,
+					"parameters": {
+						"value": "RN = 1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "barspawn",
+					"sid": 245589912427540,
+					"parameters": {
+						"object": "reelbar",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 102089277856584
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "fish",
+					"sid": 559735753673921
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 173690338056456,
+					"parameters": {
+						"value": "RN = 2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "barspawn",
+					"sid": 908028434588078,
+					"parameters": {
+						"object": "reelbar",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "fishplaceholder",
+					"sid": 622134636924447,
+					"disabled": true,
+					"parameters": {
+						"object": "Nila",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 806550331186151,
+					"disabled": true,
+					"parameters": {
+						"variable": "RN",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 106798653181707
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "fish",
+					"sid": 507050993804789
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 620610320844008,
+					"parameters": {
+						"value": "RN = 3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "barspawn",
+					"sid": 924890974161874,
+					"parameters": {
+						"object": "reelbar",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "fishplaceholder",
+					"sid": 255973089877460,
+					"disabled": true,
+					"parameters": {
+						"object": "Mujaer",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 679150699832448,
+					"disabled": true,
+					"parameters": {
+						"variable": "RN",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 518813917463470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 869393469120064,
+					"parameters": {
+						"animation": "\"reeled\""
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 991310740981136,
+					"parameters": {
+						"first-value": "reeltime",
+						"comparison": 0,
+						"second-value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 644323060998090,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 298099295412283,
+					"parameters": {
+						"variable": "reeltime",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 156468880201253,
+					"parameters": {
+						"text": "\"Timer: \" & reeltime"
+					}
+				}
+			],
+			"sid": 723147382625441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 513163779812576,
+					"parameters": {
+						"animation": "\"reeled\""
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 873713656705050,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 826292294665017,
+					"parameters": {
+						"variable": "reeltime",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 951389254501703,
+					"parameters": {
+						"text": "\"Timer: \" & reeltime"
+					}
+				}
+			],
+			"sid": 280194369135630
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "reelbar",
+					"sid": 849743193087775
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "reelbar",
+					"sid": 238258726660260,
+					"parameters": {
+						"object": "reelprog",
+						"layer": "0",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "reelbar",
+					"sid": 393311647324854,
+					"parameters": {
+						"object": "fishreel",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "reelbar",
+					"sid": 156923924727381,
+					"parameters": {
+						"object": "reelblock",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 508960269727325
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 717149336552072,
+					"parameters": {
+						"value": "RN > 0"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 969095298491777,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-height",
+					"objectClass": "reelprog",
+					"sid": 552881463169791,
+					"parameters": {
+						"height": "clamp(int((fishprog / success) * 225), 0, 225)\n"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "fishprogg",
+					"sid": 452410670772798,
+					"parameters": {
+						"text": "fishprog"
+					}
+				}
+			],
+			"sid": 434653600384854
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 780299056967010,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 331851638283645,
+					"parameters": {
+						"value": "RN > 0"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "reelblock",
+					"sid": 174079934379857,
+					"parameters": {
+						"object": "maxh"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "reelblock",
+					"sid": 326291890003314,
+					"parameters": {
+						"y": "reelblock.Y-1"
+					}
+				}
+			],
+			"sid": 702191294519370
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 737954607297923,
+					"parameters": {
+						"mouse-button": "left"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 904379154464856,
+					"parameters": {
+						"value": "RN > 0"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "reelblock",
+					"sid": 587553443582357,
+					"parameters": {
+						"object": "minh"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "reelblock",
+					"sid": 898296256607697,
+					"parameters": {
+						"y": "reelblock.Y+1"
+					}
+				}
+			],
+			"sid": 850920966409075
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 638164161218904,
+					"parameters": {
+						"value": "RN > 0"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 381974650944097,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "fishreel",
+					"sid": 218578687775901,
+					"parameters": {
+						"y": "fishreel.Y + random(-15, 15) \n"
+					}
+				}
+			],
+			"sid": 661209672349273
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 898355705642664,
+					"parameters": {
+						"value": "RN = 1"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 373084212400712,
+					"parameters": {
+						"interval-seconds": "0.5"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "reelblock",
+					"sid": 522997925856212,
+					"parameters": {
+						"object": "fishreel"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 768473145661550,
+					"parameters": {
+						"variable": "fishprog",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "fishreel",
+					"sid": 509666862963470,
+					"parameters": {
+						"y": "fishreel.Y + random(-15, 15) \n"
+					}
+				}
+			],
+			"sid": 963530218666420
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 501191659159777,
+					"parameters": {
+						"value": "RN = 2"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 309918678773684,
+					"parameters": {
+						"interval-seconds": "0.5"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "reelblock",
+					"sid": 365412568028657,
+					"parameters": {
+						"object": "fishreel"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 269187236168078,
+					"parameters": {
+						"variable": "fishprog",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "fishreel",
+					"sid": 913848021977859,
+					"parameters": {
+						"y": "fishreel.Y + random(-15, 15) \n"
+					}
+				}
+			],
+			"sid": 570605574676711
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 989347558245453,
+					"parameters": {
+						"value": "RN = 3"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 190993234462865,
+					"parameters": {
+						"interval-seconds": "0.5"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "reelblock",
+					"sid": 244240012857525,
+					"parameters": {
+						"object": "fishreel"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 930362544843290,
+					"parameters": {
+						"variable": "fishprog",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "fishreel",
+					"sid": 669809373833669,
+					"parameters": {
+						"y": "fishreel.Y + random(-15, 15) \n"
+					}
+				}
+			],
+			"sid": 509649343249546
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 713055413757837,
+					"parameters": {
+						"interval-seconds": "0.5"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "reelblock",
+					"sid": 741853344457021,
+					"parameters": {
+						"object": "fishreel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 608584682485897,
+					"parameters": {
+						"variable": "fishprog",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 205301785302304
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "fishreel",
+					"sid": 343879883625945,
+					"parameters": {
+						"object": "maxh"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "fishreel",
+					"sid": 844569958235685,
+					"parameters": {
+						"y": "fishreel.Y + 20 \n"
+					}
+				}
+			],
+			"sid": 994928024844799
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "fishreel",
+					"sid": 611425544479792,
+					"parameters": {
+						"object": "minh"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "fishreel",
+					"sid": 937012008590521,
+					"parameters": {
+						"y": "fishreel.Y - 20 \n"
+					}
+				}
+			],
+			"sid": 216467371155908
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 704058622352936,
+					"parameters": {
+						"first-value": "fishprog",
+						"comparison": 5,
+						"second-value": "100"
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 537251625808938,
+					"parameters": {
+						"value": "RN = 1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 912906156545725,
+					"parameters": {
+						"animation": "\"success\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 200774090069201,
+					"parameters": {
+						"variable": "Caught",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 873896393604662
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 358575278879850,
+					"parameters": {
+						"first-value": "fishprog",
+						"comparison": 5,
+						"second-value": "100"
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 631799185798604,
+					"parameters": {
+						"value": "RN = 2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 971820943015982,
+					"parameters": {
+						"animation": "\"success\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 947593762500429,
+					"parameters": {
+						"variable": "Caught",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 925199557482172
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 958923622517250,
+					"parameters": {
+						"first-value": "fishprog",
+						"comparison": 5,
+						"second-value": "100"
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 542943893071263,
+					"parameters": {
+						"value": "RN = 3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 535180044536060,
+					"parameters": {
+						"animation": "\"success\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 919741129887556,
+					"parameters": {
+						"variable": "Caught",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 997977664851864
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 227389901459531,
+					"parameters": {
+						"first-value": "fishprog",
+						"comparison": 3,
+						"second-value": "0"
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 490180812791672,
+					"parameters": {
+						"value": "RN > 0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 629689851645740,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 195062769563739,
+					"parameters": {
+						"variable": "Caught",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 332545242237026
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Player",
+					"sid": 710119667258799,
+					"parameters": {
+						"animation": "\"success\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "fish",
+					"sid": 374739507258979,
+					"parameters": {
+						"object": "Player",
+						"image-point-optional": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "fish",
+					"sid": 440059637343061,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reelbar",
+					"sid": 439891832348755
+				},
+				{
+					"id": "destroy",
+					"objectClass": "fishreel",
+					"sid": 882736411015241
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reelblock",
+					"sid": 760420190710940
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reelprog",
+					"sid": 820544878525113
+				}
+			],
+			"sid": 818764152276458
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 319961092338135,
+					"parameters": {
+						"first-value": "Caught",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "fishplaceholder",
+					"sid": 528294099534220,
+					"parameters": {
+						"object": "Koi",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 419507494298446,
+					"parameters": {
+						"variable": "RN",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 154152142549372
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 150089372733240,
+					"parameters": {
+						"first-value": "Caught",
+						"comparison": 0,
+						"second-value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "fishplaceholder",
+					"sid": 748596776086399,
+					"parameters": {
+						"object": "Nila",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 503155910950240,
+					"parameters": {
+						"variable": "RN",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 871371981537235
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 267561668942841,
+					"parameters": {
+						"first-value": "Caught",
+						"comparison": 0,
+						"second-value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "fishplaceholder",
+					"sid": 422509350551062,
+					"parameters": {
+						"object": "Mujaer",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 793107134772566,
+					"parameters": {
+						"variable": "RN",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 771190641093089
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 815088565969033,
+					"parameters": {
+						"first-value": "Caught",
+						"comparison": 0,
+						"second-value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "fish",
+					"sid": 515938511737894
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reelbar",
+					"sid": 205123051440026
+				},
+				{
+					"id": "destroy",
+					"objectClass": "fishreel",
+					"sid": 223968625421698
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reelblock",
+					"sid": 827583801452425
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reelprog",
+					"sid": 283373565439756
+				}
+			],
+			"sid": 163274866407756
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 824186546041545
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 800486987192198,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 426806963724615
+		}
+	],
+	"sid": 806274611088430
+}
