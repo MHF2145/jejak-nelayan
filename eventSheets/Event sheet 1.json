@@ -1210,6 +1210,15 @@
 						"variable": "RN",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 139682384363766,
+					"parameters": {
+						"variable": "fishprog",
+						"value": "50"
+					}
 				}
 			],
 			"sid": 154152142549372
@@ -1249,6 +1258,15 @@
 						"variable": "RN",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 141378845253992,
+					"parameters": {
+						"variable": "fishprog",
+						"value": "50"
+					}
 				}
 			],
 			"sid": 871371981537235
@@ -1287,6 +1305,15 @@
 					"parameters": {
 						"variable": "RN",
 						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 971183244153980,
+					"parameters": {
+						"variable": "fishprog",
+						"value": "50"
 					}
 				}
 			],
