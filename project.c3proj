@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -33,6 +40,20 @@
 			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "depthstripe",
+			"name": "Depth stripe",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "1aucbn1hsl3",
@@ -56,7 +77,13 @@
 			"barspawn",
 			"fishprogg",
 			"maxh",
-			"minh"
+			"minh",
+			"mainMenuBackground",
+			"playmenu",
+			"quitmenu",
+			"PlayText",
+			"Quittext",
+			"Browser"
 		],
 		"subfolders": []
 	},
@@ -77,7 +104,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Main Menu Sheets"
 		],
 		"subfolders": []
 	},
@@ -99,7 +127,24 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "Story Milky.otf",
+					"type": "application/font-sfnt",
+					"sid": 221565886023800,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Story Milky.ttf",
+					"type": "application/font-sfnt",
+					"sid": 185819598034243,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {

@@ -1,0 +1,14 @@
+{
+	"name": "Quittext",
+	"plugin-id": "Text",
+	"sid": 345703144249688,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "depthstripe",
+			"name": "DepthStripe"
+		}
+	]
+}
