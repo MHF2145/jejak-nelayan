@@ -82,6 +82,36 @@
 			"sid": 598295679885341
 		},
 		{
+			"eventType": "variable",
+			"name": "Quest1",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 373556469854305
+		},
+		{
+			"eventType": "variable",
+			"name": "Quest2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 714072847955797
+		},
+		{
+			"eventType": "variable",
+			"name": "Quest3",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 879871978485396
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
