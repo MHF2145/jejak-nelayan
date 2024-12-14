@@ -1,0 +1,382 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 41602,
+	"name": "Jejak Nelayan",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "contrast",
+			"name": "Contrast",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "depthstripe",
+			"name": "Depth stripe",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "1aucbn1hsl3",
+	"objectTypes": {
+		"items": [
+			"Player",
+			"Keyboard",
+			"Mouse",
+			"fish",
+			"fishplaceholder",
+			"Salmon",
+			"Tongkol",
+			"Kerapu",
+			"gachaRate",
+			"Timer",
+			"reelbar",
+			"reelprog",
+			"fishreel",
+			"reelblock",
+			"barspawn",
+			"fishprogg",
+			"maxh",
+			"minh",
+			"mainMenuBackground",
+			"playmenu",
+			"mainmenu",
+			"PlayText",
+			"Quittext",
+			"Browser",
+			"Pause",
+			"background_sky",
+			"background_sand",
+			"background_ocean",
+			"background_clouds_medium",
+			"background_clouds_medium2",
+			"background_clouds_big",
+			"Fishing_hut",
+			"Boat",
+			"Tong_ikan",
+			"Icons_",
+			"seawave",
+			"fishfamilycount",
+			"sundial",
+			"pausebut",
+			"hourhand",
+			"fishtime",
+			"beforeDialog",
+			"onDialog",
+			"napoleon",
+			"nelayan",
+			"TextBoard",
+			"DialogText",
+			"Speaker",
+			"PressSpace",
+			"testproses",
+			"testquest",
+			"dapetikan",
+			"howtoplay",
+			"sh",
+			"th",
+			"kh",
+			"tht",
+			"kht",
+			"sht",
+			"Audio",
+			"khi",
+			"shi",
+			"thi",
+			"sudahTercapai"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"BigBoard_",
+					"pausetext",
+					"resume",
+					"tomain",
+					"resume2"
+				],
+				"subfolders": [],
+				"name": "UI Pause"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"gachafish",
+			"fishing_bar"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Game1",
+			"Main Menu",
+			"Story"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Main Game sheet",
+			"Main Menu Sheets",
+			"Story sheet",
+			"DIalogFunction"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "Naruto Shippuden OST - Douten - Heaven Shaking Event (Story ka1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 150465133665976,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Naruto - Afternoon of Konoha(mancing santai ka1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 204911367357069,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Naruto OST 2 - Hinata vs Neji(Main Menu ka1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 771337338411608,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "Story Milky.otf",
+					"type": "application/font-sfnt",
+					"sid": 221565886023800,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Story Milky.ttf",
+					"type": "application/font-sfnt",
+					"sid": 185819598034243,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 649154271223379,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 198462291364891,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 785030678687741,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 604752266549146,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 894534257416327,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 129112820187932,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 682531446936160,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [
+			"Flowchart 1"
+		],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 854,
+	"viewportHeight": 480,
+	"firstLayout": "Main Menu"
+}

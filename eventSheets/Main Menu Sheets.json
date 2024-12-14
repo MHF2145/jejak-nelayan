@@ -1,0 +1,220 @@
+{
+	"name": "Main Menu Sheets",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 224992990362145,
+					"parameters": {
+						"object": "playmenu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "PlayText",
+					"sid": 742719399697084,
+					"parameters": {
+						"size-pt": "40"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "playmenu",
+					"sid": 478407185579858,
+					"parameters": {
+						"scale": "2"
+					}
+				}
+			],
+			"sid": 745133629493498
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 823907521468901,
+					"parameters": {
+						"object": "playmenu"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "playmenu",
+					"sid": 122673903114973,
+					"parameters": {
+						"scale": "1.5"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "PlayText",
+					"sid": 292985249803463,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 250707689788107
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 351549043713508,
+					"parameters": {
+						"object": "mainmenu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "Quittext",
+					"sid": 218715904401962,
+					"parameters": {
+						"size-pt": "40"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "mainmenu",
+					"sid": 178312310658102,
+					"parameters": {
+						"scale": "2"
+					}
+				}
+			],
+			"sid": 651120578383331
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 436124898398760,
+					"parameters": {
+						"object": "mainmenu"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "mainmenu",
+					"sid": 606783840105494,
+					"parameters": {
+						"scale": "1.5"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Quittext",
+					"sid": 291733399927769,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 339527290589014
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 251385035688025,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "playmenu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 852674327435370,
+					"parameters": {
+						"layout": "Story"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 905475448045678
+				}
+			],
+			"sid": 863587906021443
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 199474480979081,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "mainmenu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 821974686847848
+				}
+			],
+			"sid": 474737755144019
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 720954428179403
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "mainMenuBackground",
+					"sid": 607202134473802
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 428114759845059,
+					"parameters": {
+						"audio-file": "Naruto OST 2 - Hinata vs Neji(Main Menu ka1)",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 719379701912959
+		}
+	],
+	"sid": 401253884188822
+}

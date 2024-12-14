@@ -1,0 +1,13 @@
+{
+	"name": "gachafish",
+	"plugin-id": "Sprite",
+	"sid": 889475161543003,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Salmon",
+		"Tongkol",
+		"Kerapu"
+	]
+}
