@@ -1,7 +1,7 @@
 {
 	"name": "TextBoard",
 	"plugin-id": "Sprite",
-	"sid": 860256683404846,
+	"sid": 510043973929386,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5785793,
+						"imageSpriteId": 7667677,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 616201059779146,
+				"sid": 795417332491874,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,7 +1,7 @@
 {
 	"name": "napoleon",
 	"plugin-id": "Sprite",
-	"sid": 434103188924272,
+	"sid": 290706249609733,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7400208,
+						"imageSpriteId": 4883133,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 314790725820793,
+				"sid": 925938529668618,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

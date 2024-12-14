@@ -1,14 +1,14 @@
 {
 	"name": "PressSpace",
 	"plugin-id": "Text",
-	"sid": 812526435735681,
+	"sid": 216743511191400,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 156864727538749
+			"sid": 272176599187633
 		}
 	],
 	"effectTypes": []

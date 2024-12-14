@@ -1,1 +1,152 @@
-[["Player",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["fish",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["fishplaceholder",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["Salmon",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["Tongkol",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["Kerapu",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["reelbar",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["reelprog",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["fishreel",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["reelblock",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["barspawn",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["maxh",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["minh",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["background_sky",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["background_sand",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["background_ocean",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["background_clouds_big",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["Fishing_hut",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["Boat",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["Tong_ikan",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["seawave",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["Pause",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["resume",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["tomain",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["mainmenu",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["sundial",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["hourhand",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["background_clouds_medium",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["resume2",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["beforeDialog",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["sh",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["th",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["kh",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["khi",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["shi",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["thi",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["BigBoard_",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["mainMenuBackground",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}],["nelayan",{"animations":"{\"expanded\":true,\"subfolders\":[]}"}]]
+[
+    [
+        "Player",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "bg",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "fish",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "fishplaceholder",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "Salmon",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "Tongkol",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "Kerapu",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "reelbar",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "reelprog",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "fishreel",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "reelblock",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "barspawn",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "maxh",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "minh",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "background_sky",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "background_sand",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "background_ocean",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "background_clouds_big",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "Fishing_hut",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "Boat",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "Tong_ikan",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "seawave",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "Asset",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "Asset3",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ],
+    [
+        "Asset4",
+        {
+            "animations": "{\"expanded\":true,\"subfolders\":[]}"
+        }
+    ]
+]

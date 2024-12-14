@@ -1,7 +1,7 @@
 {
 	"name": "nelayan",
 	"plugin-id": "Sprite",
-	"sid": 833172794399503,
+	"sid": 963985175261647,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5975874,
+						"imageSpriteId": 2006021,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 935906246949829,
+				"sid": 311193684054897,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

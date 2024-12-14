@@ -1,5 +1,5 @@
 {
-	"name": "Pause",
+	"name": "Asset3",
 	"plugin-id": "Sprite",
 	"sid": 412119370928120,
 	"isGlobal": false,
@@ -19,7 +19,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9281516,
+						"imageSpriteId": 2799219,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

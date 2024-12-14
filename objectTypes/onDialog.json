@@ -1,7 +1,7 @@
 {
 	"name": "onDialog",
 	"plugin-id": "Sprite",
-	"sid": 571682324966467,
+	"sid": 184017138456890,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9350831,
+						"imageSpriteId": 6934655,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 586096555769020,
+				"sid": 353910989917063,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

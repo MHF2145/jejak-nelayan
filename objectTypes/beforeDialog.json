@@ -1,7 +1,7 @@
 {
 	"name": "beforeDialog",
 	"plugin-id": "Sprite",
-	"sid": 439480869445265,
+	"sid": 354482678437698,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,20 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6432470,
+						"imageSpriteId": 8380771,
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "Image Point 1",
-								"x": 0.9203747072599532,
-								"y": 0.9020833333333333
-							}
-						],
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 872082852017790,
+				"sid": 293702426030407,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

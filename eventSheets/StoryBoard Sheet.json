@@ -1,0 +1,784 @@
+{
+	"name": "StoryBoard Sheet",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "DialogFunction"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 218563556890333
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Epilog",
+					"sid": 307875216466498
+				}
+			],
+			"sid": 633516115426375
+		},
+		{
+			"functionName": "Opening",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 276157172835072
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 361958167314724,
+					"parameters": [
+						"\"Narrator\"",
+						"\"Dahulu kala, Kerajaan Nelayan Raya hidup makmur dari hasil laut. Namun, masa kelaparan datang tanpa peringatan. Kini, semua bergantung pada seorang nelayan pemberani bernama Slamet. Seorang Jenderal Besar Kerajaan datang ke gubug Slamet\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 920280756247649,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 232372895634041
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 670984900273040,
+					"parameters": [
+						"\"Narrator\"",
+						"\"Seorang Jenderal menemui Slamet di gubugnya, membawa surat tugas dari raja.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 948404690934105,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 400944980025259
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 311930394430175,
+					"parameters": {
+						"object-to-create": "onDialog",
+						"layer": "0",
+						"x": "435.764563",
+						"y": "244.03496",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 725958202075551,
+					"parameters": [
+						"\"J\"",
+						"\"Slamet, aku datang dengan permintaan langsung dari Raja. Kami membutuhkan bantuanmu untuk menyelamatkan kerajaan. Krisis ini bisa berakhir jika kau berhasil menangkap ikan yang cukup untuk memberi makan rakyat\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 265562048671387,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 936574228182914
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 698985859086478,
+					"parameters": [
+						"\"N\"",
+						"\"Krisis ini memang sudah terasa, Jenderal. Aku akan melakukan yang terbaik untuk kerajaan.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 465984610267393,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 916324204414481
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 882581431019951,
+					"parameters": [
+						"\"J\"",
+						"\"Aku akan memberimu misi pertama untuk menguji kemampuan memancingmu, tangkaplah 5 ikan Tongkol. Lalu berikan padaku untuk esok hari, jika kau memenuhi tugas itu, maka aku akan memberikan tugas selanjutnya yang lebih menantang\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 965858387377595,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 748494535475610
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 975842184495041,
+					"parameters": [
+						"\"N\"",
+						"\"Baiklah aku akan berusaha sebaik mungkin Jenderal, aku tidak akan mengecewakanmu\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 689738090822833,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 943548924308647
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Speaker",
+					"sid": 504771069880921,
+					"parameters": {
+						"size-pt": "20"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Speaker",
+					"sid": 195747178092964,
+					"parameters": {
+						"text": "\"Mendapat Quest Easy : MENANGKAP 5 IKAN TONGKOL\"\n"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "DialogText",
+					"sid": 327557218493937,
+					"parameters": {
+						"text": "\"- Kondisi Menang : Mengumpulkan 5 Ikan tongkol kepada Jendral di esok hari\r\n- Kondisi Kalah : Gagal mengumpulkan 5 Ikan tongkol\"",
+						"duration": "2"
+					}
+				}
+			],
+			"sid": 483092751188269
+		},
+		{
+			"functionName": "StageMedium",
+			"functionDescription": "After done easy quest, going to quest medium",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 686868874463376
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 689471560491643,
+					"parameters": [
+						"\"Narrator\"",
+						"\"Pada hari selanjutnya, Jenderal datang untuk menemui Slamet dengan tujuan untuk mengetahui kemajuan dari misi pertama\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 271783762459752,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 793680775627403
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 500159976747739,
+					"parameters": {
+						"object-to-create": "onDialog",
+						"layer": "0",
+						"x": "435.764563",
+						"y": "244.03496",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 777108240324699,
+					"parameters": [
+						"\"J\"",
+						"\"Bagus Slamet, aku tau kamu pasti bisa melakukan misi yang mudah sebelumnya. Sekarang aku ingin kamu membantu aku untuk memenuhi kebutuhan dari suatu desa di kerajaan kita yang terletak di selatan.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 653042848076148,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 437880562522083
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 992444096925748,
+					"parameters": [
+						"\"N\"",
+						"\"Terima kasih atas puijan yang anda berikan Jenderal. Saya sangat senang jika bisa berguna dan melayani negeri tanah air saya ini.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 875425225314909,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 938244004831034
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 655573031445349,
+					"parameters": [
+						"\"J\"",
+						"\"Mereka membutuhkan beberapa ikan yang sangat banyak karena kekurangan pasokan, dan kamu akan aku berikan misi dengan tingkat yang lebih sulit dari misi sebelumnya, apakah kamu yakin?\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 628082090977207,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 782733831969956
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 135694077131549,
+					"parameters": [
+						"\"N\"",
+						"\"Saya akan berusaha semampu saya Jenderal, saya berusaha agar tidak mengecewakan anda demi negeri ini.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 994203083810514,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 458360768320575
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 773068837245427,
+					"parameters": [
+						"\"J\"",
+						"\"Semangat yang bagus wahai Pahlawan Nelayan, misi kali ini adalah untuk Menangkap 3 ikan Kerapu dan 3 Tongkol, berikanlah aku kabar baik esok hari, aku mengandalkanmu untuk krisis ini Slamet.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 281056044073941,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 433255653933709
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 815168534531208,
+					"parameters": [
+						"\"N\"",
+						"\"Baiklah aku akan berusaha sebaik mungkin Jenderal, aku tidak akan mengecewakanmu\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 207620914357847,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 476880029804269
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Speaker",
+					"sid": 449602511855157,
+					"parameters": {
+						"size-pt": "16"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Speaker",
+					"sid": 381964065342917,
+					"parameters": {
+						"text": "\"Mendapat Quest Medium: MENANGKAP 3 IKAN KERAPU & 3 IKAN TONGKOL\"\n"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "DialogText",
+					"sid": 227067864008202,
+					"parameters": {
+						"text": "\"- Kondisi Menang : Mengumpulkan 3 Ikan Kerapu dan  3 Ikan tongkol kepada Jendral di esok hari\r\n- Kondisi Kalah : Gagal mengumpulkan 3 Ikan kerapu dan 3 Ikan tongkol\"",
+						"duration": "2"
+					}
+				}
+			],
+			"sid": 349932093913867
+		},
+		{
+			"functionName": "StageHard",
+			"functionDescription": "After done easy quest, going to quest medium",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 951521660904612
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 302197311739988,
+					"parameters": [
+						"\"Narrator\"",
+						"\"Pada hari selanjutnya, Jenderal datang untuk menemui Slamet dengan tujuan untuk mengetahui kemajuan dari misi kedua yaitu penangkapan kerapu dan juga tongkol\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 373601689526281,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 531064557589744
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 740840989837923,
+					"parameters": {
+						"object-to-create": "onDialog",
+						"layer": "0",
+						"x": "435.764563",
+						"y": "244.03496",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 128886576910591,
+					"parameters": [
+						"\"J\"",
+						"\"Bagus Slamet, aku tau kamu mampu menyelamatkan salah satu desa di negara kita sekarang. Kebetulan sekarang akan diadakan perayaan di Pusat Kota karena krisis kelaparan sudah hampir selesai. Tapi sepertinya kita butuh persiapan bahan makanan yang sulit didapatkan.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 215563849872824,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 671997596419018
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 776342050755279,
+					"parameters": [
+						"\"N\"",
+						"\"Terima kasih atas puijan yang anda berikan Jenderal. Saya senang sekali jika krisis ini hampir selesai. Saya bisa membantu mencari bahan makanan selama itu ada di laut Jenderal.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 723933044937561,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 667156957556816
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 295946042076849,
+					"parameters": [
+						"\"J\"",
+						"\"Bagus, senang mendengar kalimat itu dari mulutmu Slamet. Tapi ini akan agak sulit, karena ikan ini sulit ditangkap. Mereka butuh seorang Nelayan yang bisa menangkap 5 Ikan salmon dan 10 Ikan kerapu. Apakah kamu bisa?\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 837907757436363,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 243317583781517
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 594696759286824,
+					"parameters": [
+						"\"N\"",
+						"\"Saya akan berusaha semampu saya Jenderal, saya berusaha agar tidak mengecewakan anda, lagipula saya juga akan senang jika ikut pestanya.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 988687666856422,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 198931957375644
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 636287439920923,
+					"parameters": [
+						"\"J\"",
+						"\"Bagus Slamet, aku mengandalkanmu kawanku, kau adalah satu satunya orang yang akan kuandalkan jika ada masalah bahan makanan lagi, terima kasih banyak\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 662227156437185,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 384778217364093
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 152782387632609,
+					"parameters": [
+						"\"N\"",
+						"\"Siap Laksanakan Jenderal Napoleon, aku akan melakukan yang terbaik kali ini untuk pesta terbesar di pusat kota.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 536552182421564,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 129858428265561
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Speaker",
+					"sid": 359831263864813,
+					"parameters": {
+						"size-pt": "16"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Speaker",
+					"sid": 930651959780670,
+					"parameters": {
+						"text": "\"Mendapat Quest Hard: MENANGKAP 5 IKAN SALMON & 10 IKAN KERAPU\"\n"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "DialogText",
+					"sid": 941274244061744,
+					"parameters": {
+						"text": "\"- Kondisi Menang : Mengumpulkan 5 Ikan Salmon dan  10 Ikan Kerapu kepada Jendral di esok hari\r\n- Kondisi Kalah : Gagal mengumpulkan 5 Ikan Salmon dan  10 Ikan Kerapu\"",
+						"duration": "2"
+					}
+				}
+			],
+			"sid": 950050859311900
+		},
+		{
+			"functionName": "DialogLose",
+			"functionDescription": "Kalo kalah atau gagal menjalani misi",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 515721476145381
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 853199110564744,
+					"parameters": {
+						"object-to-create": "onDialog",
+						"layer": "0",
+						"x": "435.764563",
+						"y": "244.03496",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 500584505116113,
+					"parameters": [
+						"\"J\"",
+						"\"Sepertinya misi sebelumnya sangat berat untukmu Slamet. Maafkan aku telah merepotkanmu dan menyusahkanmu. Aku akan mencari nelayan lain saja untuk menyelesaikan krisis ini. Selamat tinggal Slamet, Maafkan aku\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 419381379678415,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 241023467368420
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 612685468125345,
+					"parameters": [
+						"\"N\"",
+						"\"(Dalam hati) Aku sangat tidak berguna, bodoh sekali aku. Skill issue sekali, tidak bisa bikin game, shit men, dem bro, mending ngulang dari awal\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 446417017364170,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 849267700799392
+				},
+				{
+					"id": "destroy",
+					"objectClass": "DialogText",
+					"sid": 624453471438818
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Speaker",
+					"sid": 181682073483528,
+					"parameters": {
+						"size-pt": "28"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Speaker",
+					"sid": 645383507788683,
+					"parameters": {
+						"text": "\"KAMU KALAH, ULANG AJA DARI AWAL NOOB. DASAR SKILL ISSUE AWOKAWOKAWOKAWOKAWOK\"\n"
+					}
+				}
+			],
+			"sid": 452953704500083
+		},
+		{
+			"functionName": "Epilog",
+			"functionDescription": "jika menang setelah menyeleasikan quest hard",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 324098943496825
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 821409123989229,
+					"parameters": {
+						"object-to-create": "onDialog",
+						"layer": "0",
+						"x": "435.764563",
+						"y": "244.03496",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 835497332886830,
+					"parameters": [
+						"\"J\"",
+						"\"Wow, tak kusangkan kau berhasil menyelesaikan misi sesulit itu, kau adalah Nelayan yang sangat luar biasa Slamet. Selamat, namamu akan dikenang dan akan diberikan penghargaan oleh kerajaan karena kontribusimu yang sangat banyak.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 854737963870901,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 839520567080799
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 440536127049737,
+					"parameters": [
+						"\"N\"",
+						"\"Saya dengan senang hati dan tulus dalam melayani negeri ini, sudah kewajiban saya untuk berkontribusi kepada negara ini Jendral. Terima kasih banyak telah mempercayai saya.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 899823582485390,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 341704324359316
+				},
+				{
+					"id": "destroy",
+					"objectClass": "DialogText",
+					"sid": 223554563320584
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Speaker",
+					"sid": 726185248741033,
+					"parameters": {
+						"size-pt": "28"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Speaker",
+					"sid": 966593450425772,
+					"parameters": {
+						"text": "\"SELAMAT BOLO, KELAR BOLO, JAGOOO UWOWOWOWOWO\"\n"
+					}
+				}
+			],
+			"sid": 396606681807214
+		}
+	],
+	"sid": 803455387157599
+}
