@@ -112,6 +112,16 @@
 			"sid": 879871978485396
 		},
 		{
+			"eventType": "variable",
+			"name": "debugfish",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 306960016109298
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1286,6 +1296,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 192250121594532,
+					"parameters": {
+						"variable": "Caught",
+						"value": "0"
+					}
+				},
+				{
 					"id": "spawn-another-object",
 					"objectClass": "fishplaceholder",
 					"sid": 528294099534220,
@@ -1343,6 +1362,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 286470400508075,
+					"parameters": {
+						"variable": "Caught",
+						"value": "0"
+					}
+				},
+				{
 					"id": "spawn-another-object",
 					"objectClass": "fishplaceholder",
 					"sid": 748596776086399,
@@ -1399,6 +1427,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 965567914060803,
+					"parameters": {
+						"variable": "Caught",
+						"value": "0"
+					}
+				},
 				{
 					"id": "spawn-another-object",
 					"objectClass": "fishplaceholder",
@@ -1490,6 +1527,36 @@
 				}
 			],
 			"sid": 426806963724615
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "gachafish",
+					"sid": 180718127134813
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 528775105305441,
+					"parameters": {
+						"variable": "debugfish",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "fishfamilycount",
+					"sid": 843392698281362,
+					"parameters": {
+						"text": "debugfish"
+					}
+				}
+			],
+			"sid": 264088641392164
 		}
 	],
 	"sid": 806274611088430

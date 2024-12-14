@@ -1,0 +1,384 @@
+{
+	"name": "DialogFunction",
+	"events": [
+		{
+			"functionName": "Dialog",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "SpeakerName",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 519722111680127
+				},
+				{
+					"name": "dialogtext",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 678428788930904
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Speaker",
+					"sid": 908382052211929
+				},
+				{
+					"id": "destroy",
+					"objectClass": "DialogText",
+					"sid": 333094483664129
+				},
+				{
+					"id": "destroy",
+					"objectClass": "TextBoard",
+					"sid": 425794523137812
+				},
+				{
+					"id": "destroy",
+					"objectClass": "napoleon",
+					"sid": 174538342904417
+				},
+				{
+					"id": "destroy",
+					"objectClass": "nelayan",
+					"sid": 271844072129147
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 895659945902178,
+					"parameters": {
+						"object-to-create": "TextBoard",
+						"layer": "2",
+						"x": "429",
+						"y": "600",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "TextBoard",
+					"sid": 481097327433543,
+					"parameters": {
+						"scale": "4"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 128764137379812,
+					"parameters": {
+						"object-to-create": "PressSpace",
+						"layer": "2",
+						"x": "525",
+						"y": "330",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 721596913041329,
+					"parameters": {
+						"object-to-create": "Speaker",
+						"layer": "2",
+						"x": "68.237043",
+						"y": "314.867048",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 281141693241937,
+					"parameters": {
+						"object-to-create": "DialogText",
+						"layer": "2",
+						"x": "74",
+						"y": "383",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 484310544994674,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 387162583908009,
+							"parameters": {
+								"first-value": "SpeakerName",
+								"comparison": 0,
+								"second-value": "\"Narrator\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Speaker",
+							"sid": 696056332039898,
+							"parameters": {
+								"text": "SpeakerName"
+							}
+						}
+					],
+					"sid": 550519913553675
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 739749292398156
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 615053652024095,
+							"parameters": {
+								"object-to-create": "nelayan",
+								"layer": "1",
+								"x": "171",
+								"y": "360",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 226133756594523,
+							"parameters": {
+								"object-to-create": "napoleon",
+								"layer": "1",
+								"x": "638",
+								"y": "200",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 615609507876905,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 742855084974195,
+									"parameters": {
+										"first-value": "SpeakerName",
+										"comparison": 0,
+										"second-value": "\"J\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Speaker",
+									"sid": 337999720295399,
+									"parameters": {
+										"text": "\"Jendral Napoleon\""
+									}
+								},
+								{
+									"id": "set-scale",
+									"objectClass": "nelayan",
+									"sid": 853882653200060,
+									"parameters": {
+										"scale": "0.6"
+									}
+								},
+								{
+									"id": "set-scale",
+									"objectClass": "napoleon",
+									"sid": 487537550008961,
+									"parameters": {
+										"scale": "0.5"
+									}
+								}
+							],
+							"sid": 302709511647279
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 366606107525849
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Speaker",
+									"sid": 585106860911887,
+									"parameters": {
+										"text": "\"Slamet Sang Nelayan\""
+									}
+								},
+								{
+									"id": "set-scale",
+									"objectClass": "napoleon",
+									"sid": 597342990763034,
+									"parameters": {
+										"scale": "0.2"
+									}
+								},
+								{
+									"id": "set-scale",
+									"objectClass": "nelayan",
+									"sid": 779833376899040,
+									"parameters": {
+										"scale": "0.8"
+									}
+								}
+							],
+							"sid": 706368670720068
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "typewriter-text",
+							"objectClass": "DialogText",
+							"sid": 579483654757034,
+							"parameters": {
+								"text": "DialogText",
+								"duration": "2"
+							}
+						}
+					],
+					"sid": 281567302590914
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 290935755683949,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "DialogText",
+					"sid": 394208583137508
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-finish",
+					"objectClass": "DialogText",
+					"sid": 988412403277212
+				}
+			],
+			"sid": 253531956344056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 776713453050338,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "DialogText",
+					"sid": 687163785315728,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 146492307762463,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				}
+			],
+			"sid": 980440528998682
+		},
+		{
+			"functionName": "DestroyDialog",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "TextBoard",
+					"sid": 696321462454869
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Speaker",
+					"sid": 665594970775555
+				},
+				{
+					"id": "destroy",
+					"objectClass": "DialogText",
+					"sid": 609784899046722
+				},
+				{
+					"id": "destroy",
+					"objectClass": "napoleon",
+					"sid": 773974138944725
+				},
+				{
+					"id": "destroy",
+					"objectClass": "nelayan",
+					"sid": 561878199271424
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 966702053443009
+				}
+			],
+			"sid": 674592197561034
+		}
+	],
+	"sid": 335733393093618
+}

@@ -1,7 +1,7 @@
 {
-	"name": "Asset3",
+	"name": "nelayan",
 	"plugin-id": "Sprite",
-	"sid": 412119370928120,
+	"sid": 963985175261647,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,21 +11,21 @@
 			{
 				"frames": [
 					{
-						"width": 43,
-						"height": 44,
+						"width": 1000,
+						"height": 1000,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2799219,
+						"imageSpriteId": 2006021,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 357137193191688,
+				"sid": 311193684054897,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

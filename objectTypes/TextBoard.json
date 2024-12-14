@@ -1,7 +1,7 @@
 {
-	"name": "Asset3",
+	"name": "TextBoard",
 	"plugin-id": "Sprite",
-	"sid": 412119370928120,
+	"sid": 510043973929386,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,21 +11,21 @@
 			{
 				"frames": [
 					{
-						"width": 43,
-						"height": 44,
+						"width": 237,
+						"height": 175,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2799219,
+						"imageSpriteId": 7667677,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 357137193191688,
+				"sid": 795417332491874,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
