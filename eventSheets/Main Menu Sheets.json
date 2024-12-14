@@ -74,7 +74,7 @@
 					"objectClass": "Mouse",
 					"sid": 351549043713508,
 					"parameters": {
-						"object": "quitmenu"
+						"object": "mainmenu"
 					}
 				}
 			],
@@ -89,7 +89,7 @@
 				},
 				{
 					"id": "set-scale",
-					"objectClass": "quitmenu",
+					"objectClass": "mainmenu",
 					"sid": 178312310658102,
 					"parameters": {
 						"scale": "2"
@@ -106,7 +106,7 @@
 					"objectClass": "Mouse",
 					"sid": 436124898398760,
 					"parameters": {
-						"object": "quitmenu"
+						"object": "mainmenu"
 					},
 					"isInverted": true
 				}
@@ -114,7 +114,7 @@
 			"actions": [
 				{
 					"id": "set-scale",
-					"objectClass": "quitmenu",
+					"objectClass": "mainmenu",
 					"sid": 606783840105494,
 					"parameters": {
 						"scale": "1.5"
@@ -149,10 +149,15 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 241333818858950,
+					"sid": 852674327435370,
 					"parameters": {
-						"layout": "Layout 1"
+						"layout": "Story"
 					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 905475448045678
 				}
 			],
 			"sid": 863587906021443
@@ -167,7 +172,7 @@
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "quitmenu"
+						"object-clicked": "mainmenu"
 					}
 				}
 			],
@@ -179,6 +184,36 @@
 				}
 			],
 			"sid": 474737755144019
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 720954428179403
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "mainMenuBackground",
+					"sid": 607202134473802
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 428114759845059,
+					"parameters": {
+						"audio-file": "Naruto OST 2 - Hinata vs Neji(Main Menu ka1)",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 719379701912959
 		}
 	],
 	"sid": 401253884188822

@@ -1,0 +1,14 @@
+{
+	"name": "sudahTercapai",
+	"plugin-id": "Text",
+	"sid": 599895154521540,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "contrast",
+			"name": "Contrast"
+		}
+	]
+}

@@ -1,0 +1,1557 @@
+{
+	"name": "Story sheet",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Quest",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 202772138418224
+		},
+		{
+			"eventType": "variable",
+			"name": "Proses",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 706632835000727
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "DIalogFunction"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Main Game sheet"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 172945674302923
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "beforeDialog",
+					"sid": 633722472232147
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 289983285213329,
+					"parameters": {
+						"audio-file": "Naruto Shippuden OST - Douten - Heaven Shaking Event (Story ka1)",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 544173884340239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 372868005295446
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 575271845353719,
+					"parameters": {
+						"value": "Proses = 1"
+					}
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "beforeDialog",
+					"sid": 510783453193755
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Opening",
+					"sid": 193771369276125
+				}
+			],
+			"sid": 879540774816937
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 421377393650813
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "testproses",
+					"sid": 567394549180702,
+					"parameters": {
+						"text": "Proses"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "testquest",
+					"sid": 390967451663588,
+					"parameters": {
+						"text": "Quest"
+					}
+				}
+			],
+			"sid": 863495854076108
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 290746600385930
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 365820402256643,
+					"parameters": {
+						"value": "Proses = 2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "StageMedium",
+					"sid": 611640447531959
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 672247714226129,
+					"parameters": {
+						"variable": "Quest",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 622988824370653
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 670990698426385
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 910592257823662,
+					"parameters": {
+						"value": "Proses = 3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "StageHard",
+					"sid": 795139448256382
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 237854708025104,
+					"parameters": {
+						"variable": "Quest",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 398255675874788
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 244403074625809
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 776320529725191,
+					"parameters": {
+						"value": "Proses = 4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Epilog",
+					"sid": 597844184023566
+				}
+			],
+			"sid": 273618838540657
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 171185412266559
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 365273236870028,
+					"parameters": {
+						"value": "Proses > 4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "DialogLose",
+					"sid": 584444547338321
+				}
+			],
+			"sid": 347941091728914
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 703330369455163,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "resume2"
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 784289807897398,
+					"parameters": {
+						"value": "Proses = 1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 579170886864885,
+					"parameters": {
+						"layout": "Game1"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 785296926552899
+				}
+			],
+			"sid": 295604892408262
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 823009720752746,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "resume2"
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 239182276396689,
+					"parameters": {
+						"value": "Proses = 2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 457707065728208,
+					"parameters": {
+						"layout": "Game1"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 674323968401125
+				}
+			],
+			"sid": 963142489072807
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 367858578542096,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "resume2"
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 115373551107120,
+					"parameters": {
+						"value": "Proses = 3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 402135189719361,
+					"parameters": {
+						"layout": "Game1"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 532049916354392
+				}
+			],
+			"sid": 161069696039438
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 674097340686364,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "resume2"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 629765437995457,
+					"parameters": {
+						"first-value": "Proses ",
+						"comparison": 0,
+						"second-value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 147024097256585,
+					"parameters": {
+						"layout": "Main Menu"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 817860718716350,
+					"parameters": {
+						"variable": "Quest",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 949493032095134,
+					"parameters": {
+						"variable": "Proses",
+						"value": "1"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 552950755657035
+				}
+			],
+			"sid": 345390577513832
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 204768264076496,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "resume2"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 185264104795411,
+					"parameters": {
+						"first-value": "Proses ",
+						"comparison": 0,
+						"second-value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 174708073052605,
+					"parameters": {
+						"layout": "Main Menu"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 817860718716350,
+					"parameters": {
+						"variable": "Quest",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 949493032095134,
+					"parameters": {
+						"variable": "Proses",
+						"value": "1"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 565715802169994
+				}
+			],
+			"sid": 716086880793952
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 349453968023762,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-on-layer",
+					"objectClass": "resume2",
+					"sid": 654880137688337,
+					"parameters": {
+						"layer": "2"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 578987498463487,
+					"parameters": {
+						"first-value": "Proses",
+						"comparison": 4,
+						"second-value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 143122502373212,
+					"parameters": {
+						"layout": "Main Menu"
+					}
+				}
+			],
+			"sid": 574198705053227,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 489766297986833
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "StageMedium",
+					"sid": 180314974415092
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 758024091142864,
+					"parameters": {
+						"layout": "Game1"
+					}
+				}
+			],
+			"sid": 684371606218924,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 771542780372060
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "StageHard",
+					"sid": 108935692977312
+				}
+			],
+			"sid": 333423562081628,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 617250956553475
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Epilog",
+					"sid": 573362766218837
+				}
+			],
+			"sid": 872689526739986,
+			"disabled": true
+		},
+		{
+			"functionName": "Opening",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 984956369113539
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 371082970005508,
+					"parameters": [
+						"\"Narrator\"",
+						"\"Dahulu kala, Kerajaan Nelayan Raya hidup makmur dari hasil laut. Namun, masa kelaparan datang tanpa peringatan. Kini, semua bergantung pada seorang nelayan pemberani bernama Slamet. Seorang Jenderal Besar Kerajaan datang ke gubug Slamet\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 243836055724345,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 613733834301998
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 193122174615401,
+					"parameters": [
+						"\"Narrator\"",
+						"\"Seorang Jenderal menemui Slamet di gubugnya, membawa surat tugas dari raja.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 162186135934540,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 255214964716337
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 858706856103135,
+					"parameters": {
+						"object-to-create": "onDialog",
+						"layer": "0",
+						"x": "435.764563",
+						"y": "244.03496",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 923274172965766,
+					"parameters": [
+						"\"J\"",
+						"\"Slamet, aku datang dengan permintaan langsung dari Raja. Kami membutuhkan bantuanmu untuk menyelamatkan kerajaan. Krisis ini bisa berakhir jika kau berhasil menangkap ikan yang cukup untuk memberi makan rakyat\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 141709399072716,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 135140710059609
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 133893906357563,
+					"parameters": [
+						"\"N\"",
+						"\"Krisis ini memang sudah terasa, Jenderal. Aku akan melakukan yang terbaik untuk kerajaan.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 702989760950583,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 921441664958930
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 462307798321973,
+					"parameters": [
+						"\"J\"",
+						"\"Aku akan memberimu misi pertama untuk menguji kemampuan memancingmu, tangkaplah 5 ikan Tongkol. Lalu berikan padaku untuk esok hari, jika kau memenuhi tugas itu, maka aku akan memberikan tugas selanjutnya yang lebih menantang\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 611195009430294,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 213133514961216
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 689304716537202,
+					"parameters": [
+						"\"N\"",
+						"\"Baiklah aku akan berusaha sebaik mungkin Jenderal, aku tidak akan mengecewakanmu\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 721694196719657,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 854066045509179
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Speaker",
+					"sid": 800667307778914,
+					"parameters": {
+						"size-pt": "20"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Speaker",
+					"sid": 147230153650644,
+					"parameters": {
+						"text": "\"Mendapat Quest Easy : MENANGKAP 5 IKAN TONGKOL\"\n"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "DialogText",
+					"sid": 859660326408412,
+					"parameters": {
+						"text": "\"- Kondisi Menang : Mengumpulkan 5 Ikan tongkol kepada Jendral di esok hari\r\n- Kondisi Kalah : Gagal mengumpulkan 5 Ikan tongkol\n\nClick to continue\n\"\n\n",
+						"duration": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 226135027444370,
+					"parameters": {
+						"variable": "Kerapufish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 832547093203028,
+					"parameters": {
+						"variable": "Salmonfish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 825874123224398,
+					"parameters": {
+						"variable": "Tongkolfish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 230102818229646,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "beforeDialog",
+					"sid": 852440274503936,
+					"parameters": {
+						"object": "resume2",
+						"layer": "2",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 116319642283392
+		},
+		{
+			"functionName": "StageMedium",
+			"functionDescription": "After done easy quest, going to quest medium",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 778804132304592
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 797057175181145,
+					"parameters": [
+						"\"Narrator\"",
+						"\"Pada hari selanjutnya, Jenderal datang untuk menemui Slamet dengan tujuan untuk mengetahui kemajuan dari misi pertama\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 144925278716543,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 384043045006012
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 404255381875441,
+					"parameters": {
+						"object-to-create": "onDialog",
+						"layer": "0",
+						"x": "435.764563",
+						"y": "244.03496",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 497329640642065,
+					"parameters": [
+						"\"J\"",
+						"\"Bagus Slamet, aku tau kamu pasti bisa melakukan misi yang mudah sebelumnya. Sekarang aku ingin kamu membantu aku untuk memenuhi kebutuhan dari suatu desa di kerajaan kita yang terletak di selatan.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 775600961003387,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 709387741566522
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 512420402823571,
+					"parameters": [
+						"\"N\"",
+						"\"Terima kasih atas puijan yang anda berikan Jenderal. Saya sangat senang jika bisa berguna dan melayani negeri tanah air saya ini.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 361179851007191,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 667428234061396
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 398083040599685,
+					"parameters": [
+						"\"J\"",
+						"\"Mereka membutuhkan beberapa ikan yang sangat banyak karena kekurangan pasokan, dan kamu akan aku berikan misi dengan tingkat yang lebih sulit dari misi sebelumnya, apakah kamu yakin?\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 353091792831257,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 613885889749456
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 200454502892451,
+					"parameters": [
+						"\"N\"",
+						"\"Saya akan berusaha semampu saya Jenderal, saya berusaha agar tidak mengecewakan anda demi negeri ini.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 848796821037391,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 698255584096677
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 592016918202550,
+					"parameters": [
+						"\"J\"",
+						"\"Semangat yang bagus wahai Pahlawan Nelayan, misi kali ini adalah untuk Menangkap 3 ikan Kerapu dan 3 Tongkol, berikanlah aku kabar baik esok hari, aku mengandalkanmu untuk krisis ini Slamet.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 236225077248061,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 615346764362541
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 129433843563124,
+					"parameters": [
+						"\"N\"",
+						"\"Baiklah aku akan berusaha sebaik mungkin Jenderal, aku tidak akan mengecewakanmu\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 479050481103063,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 322629026935157
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Speaker",
+					"sid": 995452060608838,
+					"parameters": {
+						"size-pt": "16"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Speaker",
+					"sid": 284823922702575,
+					"parameters": {
+						"text": "\"Mendapat Quest Medium: MENANGKAP 3 IKAN KERAPU & 3 IKAN TONGKOL\"\n"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "DialogText",
+					"sid": 425266013208992,
+					"parameters": {
+						"text": "\"- Kondisi Menang : Mengumpulkan 3 Ikan Kerapu dan  3 Ikan tongkol kepada Jendral di esok hari\r\n- Kondisi Kalah : Gagal mengumpulkan 3 Ikan kerapu dan 3 Ikan tongkol\n\nClick to continue\"",
+						"duration": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 579143111915630,
+					"parameters": {
+						"variable": "Kerapufish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 294414033744345,
+					"parameters": {
+						"variable": "Salmonfish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 335850307679132,
+					"parameters": {
+						"variable": "Tongkolfish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 573022438213671,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "beforeDialog",
+					"sid": 828106899600633,
+					"parameters": {
+						"object": "resume2",
+						"layer": "2",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 181329225591358
+		},
+		{
+			"functionName": "StageHard",
+			"functionDescription": "After done easy quest, going to quest medium",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 793331242387631
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 389257182417844,
+					"parameters": [
+						"\"Narrator\"",
+						"\"Pada hari selanjutnya, Jenderal datang untuk menemui Slamet dengan tujuan untuk mengetahui kemajuan dari misi kedua yaitu penangkapan kerapu dan juga tongkol\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 688052081943806,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 721679839769240
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 616292852178366,
+					"parameters": {
+						"object-to-create": "onDialog",
+						"layer": "0",
+						"x": "435.764563",
+						"y": "244.03496",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 843671174280198,
+					"parameters": [
+						"\"J\"",
+						"\"Bagus Slamet, aku tau kamu mampu menyelamatkan salah satu desa di negara kita sekarang. Kebetulan sekarang akan diadakan perayaan di Pusat Kota karena krisis kelaparan sudah hampir selesai. Tapi sepertinya kita butuh persiapan bahan makanan yang sulit didapatkan.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 619766205585979,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 212849571508655
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 459140302454771,
+					"parameters": [
+						"\"N\"",
+						"\"Terima kasih atas puijan yang anda berikan Jenderal. Saya senang sekali jika krisis ini hampir selesai. Saya bisa membantu mencari bahan makanan selama itu ada di laut Jenderal.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 890872886672636,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 328446699033324
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 374482440327611,
+					"parameters": [
+						"\"J\"",
+						"\"Bagus, senang mendengar kalimat itu dari mulutmu Slamet. Tapi ini akan agak sulit, karena ikan ini sulit ditangkap. Mereka butuh seorang Nelayan yang bisa menangkap 5 Ikan salmon dan 10 Ikan kerapu. Apakah kamu bisa?\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 896965679507240,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 237882909435229
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 874562229123000,
+					"parameters": [
+						"\"N\"",
+						"\"Saya akan berusaha semampu saya Jenderal, saya berusaha agar tidak mengecewakan anda, lagipula saya juga akan senang jika ikut pestanya.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 810223903408015,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 524746709862204
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 325583469905656,
+					"parameters": [
+						"\"J\"",
+						"\"Bagus Slamet, aku mengandalkanmu kawanku, kau adalah satu satunya orang yang akan kuandalkan jika ada masalah bahan makanan lagi, terima kasih banyak\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 734021992768947,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 895829795320995
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 301402441697168,
+					"parameters": [
+						"\"N\"",
+						"\"Siap Laksanakan Jenderal Napoleon, aku akan melakukan yang terbaik kali ini untuk pesta terbesar di pusat kota.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 323346577391155,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 910793223902983
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Speaker",
+					"sid": 985213961189861,
+					"parameters": {
+						"size-pt": "16"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Speaker",
+					"sid": 837141333162769,
+					"parameters": {
+						"text": "\"Mendapat Quest Hard: MENANGKAP 5 IKAN SALMON & 10 IKAN KERAPU\"\n"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "DialogText",
+					"sid": 322347219212230,
+					"parameters": {
+						"text": "\"- Kondisi Menang : Mengumpulkan 5 Ikan Salmon dan  10 Ikan Kerapu kepada Jendral di esok hari\r\n- Kondisi Kalah : Gagal mengumpulkan 5 Ikan Salmon dan  10 Ikan Kerapu\n\nClick to continue\"",
+						"duration": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 704957111484143,
+					"parameters": {
+						"variable": "Kerapufish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 654574779215199,
+					"parameters": {
+						"variable": "Salmonfish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 561744489258213,
+					"parameters": {
+						"variable": "Tongkolfish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 519197587246520,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "beforeDialog",
+					"sid": 735841811713874,
+					"parameters": {
+						"object": "resume2",
+						"layer": "2",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 242297375352446
+		},
+		{
+			"functionName": "DialogLose",
+			"functionDescription": "Kalo kalah atau gagal menjalani misi",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 651368518636984
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 153681128042635,
+					"parameters": {
+						"object-to-create": "onDialog",
+						"layer": "0",
+						"x": "435.764563",
+						"y": "244.03496",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 715996786860877,
+					"parameters": [
+						"\"J\"",
+						"\"Sepertinya misi sebelumnya sangat berat untukmu Slamet. Maafkan aku telah merepotkanmu dan menyusahkanmu. Aku akan mencari nelayan lain saja untuk menyelesaikan krisis ini. Selamat tinggal Slamet, Maafkan aku\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 480922544669093,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 753328526135674
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 810163933695500,
+					"parameters": [
+						"\"N\"",
+						"\"(Dalam hati) Aku sangat tidak berguna, bodoh sekali aku. Skill issue sekali, tidak bisa bikin game, shit men, dem bro, mending ngulang dari awal\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 418123195540628,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 769555778029930
+				},
+				{
+					"id": "destroy",
+					"objectClass": "DialogText",
+					"sid": 373475702072244
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Speaker",
+					"sid": 740829996022603,
+					"parameters": {
+						"size-pt": "28"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Speaker",
+					"sid": 596999735450235,
+					"parameters": {
+						"text": "\"Click to go back to main Menu\"\n"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "beforeDialog",
+					"sid": 135372492273403,
+					"parameters": {
+						"object": "resume2",
+						"layer": "2",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 871410401480186,
+					"parameters": {
+						"variable": "Kerapufish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 991742485346680,
+					"parameters": {
+						"variable": "Salmonfish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 355485053604990,
+					"parameters": {
+						"variable": "Tongkolfish",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 848220675295797
+		},
+		{
+			"functionName": "Epilog",
+			"functionDescription": "jika menang setelah menyeleasikan quest hard",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 955505238479530
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 192536632534894,
+					"parameters": {
+						"object-to-create": "onDialog",
+						"layer": "0",
+						"x": "435.764563",
+						"y": "244.03496",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 906135183908551,
+					"parameters": [
+						"\"J\"",
+						"\"Wow, tak kusangkan kau berhasil menyelesaikan misi sesulit itu, kau adalah Nelayan yang sangat luar biasa Slamet. Selamat, namamu akan dikenang dan akan diberikan penghargaan oleh kerajaan karena kontribusimu yang sangat banyak.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 304506160286775,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "DestroyDialog",
+					"sid": 889661989670854
+				},
+				{
+					"callFunction": "Dialog",
+					"sid": 522332491031643,
+					"parameters": [
+						"\"N\"",
+						"\"Saya dengan senang hati dan tulus dalam melayani negeri ini, sudah kewajiban saya untuk berkontribusi kepada negara ini Jendral. Terima kasih banyak telah mempercayai saya.\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 606431299505409,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressSpace",
+					"sid": 740288148027014
+				},
+				{
+					"id": "destroy",
+					"objectClass": "DialogText",
+					"sid": 462603145175690
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 643322400208960,
+					"parameters": {
+						"variable": "Kerapufish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 248168259864701,
+					"parameters": {
+						"variable": "Salmonfish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 926479316094103,
+					"parameters": {
+						"variable": "Tongkolfish",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "Speaker",
+					"sid": 569642584459893,
+					"parameters": {
+						"size-pt": "28"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Speaker",
+					"sid": 427325133929345,
+					"parameters": {
+						"text": "\"SELAMAT NELAYAN KAMU SUDAH MENYELEMATKAN NEGARA INI!\n\nLANJUTKAN PETUALANGAN S00LAMET YANG SELANJUTNYA!!!\n\n\nClick to go back to main Menu\"\n"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "beforeDialog",
+					"sid": 707219666585041,
+					"parameters": {
+						"object": "resume2",
+						"layer": "2",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 337763417924311
+		}
+	],
+	"sid": 389635325553020
+}

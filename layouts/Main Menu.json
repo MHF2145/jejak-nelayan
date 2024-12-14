@@ -93,7 +93,7 @@
 					}
 				},
 				{
-					"type": "quitmenu",
+					"type": "mainmenu",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
