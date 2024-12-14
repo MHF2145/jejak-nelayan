@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Browser",
 			"name": "Browser",
 			"author": "Scirra",
@@ -50,6 +57,13 @@
 		},
 		{
 			"type": "effect",
+			"id": "contrast",
+			"name": "Contrast",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "depthstripe",
 			"name": "Depth stripe",
 			"author": "Scirra",
@@ -60,7 +74,6 @@
 	"objectTypes": {
 		"items": [
 			"Player",
-			"bg",
 			"Keyboard",
 			"Mouse",
 			"fish",
@@ -80,16 +93,11 @@
 			"minh",
 			"mainMenuBackground",
 			"playmenu",
-			"quitmenu",
+			"mainmenu",
 			"PlayText",
 			"Quittext",
 			"Browser",
-			"Asset",
-			"Asset2",
-			"Asset3",
-			"Asset4",
-			"BigBoard_",
-			"Asset5",
+			"Pause",
 			"background_sky",
 			"background_sand",
 			"background_ocean",
@@ -100,9 +108,49 @@
 			"Boat",
 			"Tong_ikan",
 			"Icons_",
-			"seawave"
+			"seawave",
+			"fishfamilycount",
+			"sundial",
+			"pausebut",
+			"hourhand",
+			"fishtime",
+			"beforeDialog",
+			"onDialog",
+			"napoleon",
+			"nelayan",
+			"TextBoard",
+			"DialogText",
+			"Speaker",
+			"PressSpace",
+			"testproses",
+			"testquest",
+			"dapetikan",
+			"howtoplay",
+			"sh",
+			"th",
+			"kh",
+			"tht",
+			"kht",
+			"sht",
+			"Audio",
+			"khi",
+			"shi",
+			"thi",
+			"sudahTercapai"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"BigBoard_",
+					"pausetext",
+					"resume",
+					"tomain",
+					"resume2"
+				],
+				"subfolders": [],
+				"name": "UI Pause"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
@@ -115,16 +163,18 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1",
+			"Game1",
 			"Main Menu",
-			"Layout 2"
+			"Story"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"Main Menu Sheets"
+			"Main Game sheet",
+			"Main Menu Sheets",
+			"Story sheet",
+			"DIalogFunction"
 		],
 		"subfolders": []
 	},
@@ -138,7 +188,32 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Naruto Shippuden OST - Douten - Heaven Shaking Event (Story ka1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 150465133665976,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Naruto - Afternoon of Konoha(mancing santai ka1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 204911367357069,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Naruto OST 2 - Hinata vs Neji(Main Menu ka1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 771337338411608,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
@@ -303,5 +378,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "Main Menu"
 }
