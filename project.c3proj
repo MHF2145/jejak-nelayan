@@ -109,7 +109,16 @@
 			"onDialog",
 			"Speaker",
 			"DialogText",
-			"PressSpace"
+			"PressSpace",
+			"tilemap",
+			"tilemap2",
+			"tilemap3",
+			"tilemap4",
+			"tilemap5",
+			"tilemap6",
+			"tilemap7",
+			"tilemap8",
+			"tilemap9"
 		],
 		"subfolders": []
 	},
@@ -127,7 +136,8 @@
 			"Layout 1",
 			"Main Menu",
 			"Layout 2",
-			"StoryBoard"
+			"StoryBoard",
+			"MinigameMario"
 		],
 		"subfolders": []
 	},
@@ -136,7 +146,8 @@
 			"Event sheet 1",
 			"Main Menu Sheets",
 			"DialogFunction",
-			"StoryBoard Sheet"
+			"StoryBoard Sheet",
+			"MarioSheet"
 		],
 		"subfolders": []
 	},

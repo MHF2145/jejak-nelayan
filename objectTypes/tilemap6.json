@@ -1,7 +1,7 @@
 {
-	"name": "background_clouds_medium",
+	"name": "tilemap6",
 	"plugin-id": "Sprite",
-	"sid": 508446233225574,
+	"sid": 322289019460595,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,33 +11,21 @@
 			{
 				"frames": [
 					{
-						"width": 2000,
-						"height": 400,
-						"originX": 0.08,
-						"originY": 0.225,
+						"width": 87,
+						"height": 72,
+						"originX": 1.0689655172413792,
+						"originY": -0.1111111111111111,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1243892,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.16,
-								0,
-								0.16,
-								0.45,
-								0,
-								0.45
-							]
-						},
+						"imageSpriteId": 989016,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 689285864493725,
+				"sid": 988846571658677,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
