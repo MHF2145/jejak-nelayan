@@ -72,83 +72,147 @@
 	],
 	"uniqueId": "1aucbn1hsl3",
 	"objectTypes": {
-		"items": [
-			"Player",
-			"Keyboard",
-			"Mouse",
-			"fish",
-			"fishplaceholder",
-			"Salmon",
-			"Tongkol",
-			"Kerapu",
-			"gachaRate",
-			"Timer",
-			"reelbar",
-			"reelprog",
-			"fishreel",
-			"reelblock",
-			"barspawn",
-			"fishprogg",
-			"maxh",
-			"minh",
-			"mainMenuBackground",
-			"playmenu",
-			"mainmenu",
-			"PlayText",
-			"Quittext",
-			"Browser",
-			"Pause",
-			"background_sky",
-			"background_sand",
-			"background_ocean",
-			"background_clouds_medium",
-			"background_clouds_medium2",
-			"background_clouds_big",
-			"Fishing_hut",
-			"Boat",
-			"Tong_ikan",
-			"Icons_",
-			"seawave",
-			"fishfamilycount",
-			"sundial",
-			"pausebut",
-			"hourhand",
-			"fishtime",
-			"beforeDialog",
-			"onDialog",
-			"napoleon",
-			"nelayan",
-			"TextBoard",
-			"DialogText",
-			"Speaker",
-			"PressSpace",
-			"testproses",
-			"testquest",
-			"dapetikan",
-			"howtoplay",
-			"sh",
-			"th",
-			"kh",
-			"tht",
-			"kht",
-			"sht",
-			"Audio",
-			"khi",
-			"shi",
-			"thi",
-			"sudahTercapai"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
-					"BigBoard_",
-					"pausetext",
-					"resume",
-					"tomain",
-					"resume2"
+					"Audio",
+					"Keyboard",
+					"Mouse",
+					"Browser"
 				],
 				"subfolders": [],
-				"name": "UI Pause"
+				"name": "S&U"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"beforeDialog",
+							"onDialog",
+							"napoleon",
+							"nelayan",
+							"TextBoard",
+							"PressSpace",
+							"Speaker",
+							"DialogText"
+						],
+						"subfolders": [],
+						"name": "Story Board"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"background_clouds_big",
+									"background_clouds_medium",
+									"background_clouds_medium2",
+									"background_ocean",
+									"background_sand",
+									"background_sky",
+									"Fishing_hut",
+									"seawave",
+									"Boat"
+								],
+								"subfolders": [],
+								"name": "Background"
+							},
+							{
+								"items": [
+									"Kerapu",
+									"Salmon",
+									"Tongkol"
+								],
+								"subfolders": [],
+								"name": "FIsh"
+							},
+							{
+								"items": [
+									"fishreel",
+									"reelbar",
+									"reelblock",
+									"reelprog",
+									"barspawn",
+									"maxh",
+									"minh",
+									"fish",
+									"fishplaceholder",
+									"Player",
+									"dapetikan"
+								],
+								"subfolders": [],
+								"name": "FIshing Bar"
+							},
+							{
+								"items": [
+									"hourhand",
+									"sundial",
+									"Tong_ikan",
+									"howtoplay"
+								],
+								"subfolders": [],
+								"name": "Other Mechanic"
+							},
+							{
+								"items": [
+									"BigBoard_",
+									"pausetext",
+									"resume",
+									"tomain",
+									"resume2",
+									"Pause",
+									"pausebut"
+								],
+								"subfolders": [],
+								"name": "Pause System"
+							},
+							{
+								"items": [
+									"kh",
+									"khi",
+									"kht",
+									"sh",
+									"shi",
+									"sht",
+									"th",
+									"thi",
+									"tht"
+								],
+								"subfolders": [],
+								"name": "FIsh Holders"
+							}
+						],
+						"name": "Game 1"
+					},
+					{
+						"items": [
+							"mainmenu",
+							"playmenu",
+							"mainMenuBackground",
+							"PlayText",
+							"Quittext"
+						],
+						"subfolders": [],
+						"name": "Main Menu"
+					}
+				],
+				"name": "Asset"
+			},
+			{
+				"items": [
+					"fishfamilycount",
+					"fishprogg",
+					"fishtime",
+					"gachaRate",
+					"sudahTercapai",
+					"testproses",
+					"testquest",
+					"Timer"
+				],
+				"subfolders": [],
+				"name": "Debugging"
 			}
 		]
 	},

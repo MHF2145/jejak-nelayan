@@ -1,0 +1,14 @@
+{
+	"name": "PlayText",
+	"plugin-id": "Text",
+	"sid": 574345844498192,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "depthstripe",
+			"name": "DepthStripe"
+		}
+	]
+}

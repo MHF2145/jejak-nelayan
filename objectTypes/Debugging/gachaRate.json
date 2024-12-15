@@ -1,0 +1,17 @@
+{
+	"name": "gachaRate",
+	"plugin-id": "Text",
+	"sid": 428053609708863,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "gachaRate",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 576718409526223
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

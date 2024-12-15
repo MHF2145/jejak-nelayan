@@ -2078,6 +2078,11 @@
 							"parameters": {
 								"time-scale": "1"
 							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 319690206712939
 						}
 					],
 					"sid": 874425110711536

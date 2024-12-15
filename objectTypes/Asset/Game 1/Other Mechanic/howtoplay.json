@@ -1,0 +1,14 @@
+{
+	"name": "howtoplay",
+	"plugin-id": "Text",
+	"sid": 713316582224994,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "contrast",
+			"name": "Contrast"
+		}
+	]
+}
