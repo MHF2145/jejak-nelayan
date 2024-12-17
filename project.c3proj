@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
@@ -96,7 +103,8 @@
 							"TextBoard",
 							"PressSpace",
 							"Speaker",
-							"DialogText"
+							"DialogText",
+							"resume2"
 						],
 						"subfolders": [],
 						"name": "Story Board"
@@ -150,7 +158,8 @@
 									"hourhand",
 									"sundial",
 									"Tong_ikan",
-									"howtoplay"
+									"howtoplay",
+									"sudahTercapai"
 								],
 								"subfolders": [],
 								"name": "Other Mechanic"
@@ -161,7 +170,6 @@
 									"pausetext",
 									"resume",
 									"tomain",
-									"resume2",
 									"Pause",
 									"pausebut"
 								],
@@ -206,13 +214,21 @@
 					"fishprogg",
 					"fishtime",
 					"gachaRate",
-					"sudahTercapai",
 					"testproses",
 					"testquest",
 					"Timer"
 				],
 				"subfolders": [],
 				"name": "Debugging"
+			},
+			{
+				"items": [
+					"igaqil",
+					"ighanif",
+					"SocialMedia"
+				],
+				"subfolders": [],
+				"name": "Sosmed"
 			}
 		]
 	},
@@ -248,7 +264,16 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Splash.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 704082877551264,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
@@ -440,7 +465,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 854,
-	"viewportHeight": 480,
+	"viewportWidth": 1708,
+	"viewportHeight": 960,
 	"firstLayout": "Main Menu"
 }

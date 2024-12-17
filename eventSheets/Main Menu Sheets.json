@@ -201,6 +201,14 @@
 			],
 			"actions": [
 				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 756364083520334,
+					"parameters": {
+						"db": "-15"
+					}
+				},
+				{
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 428114759845059,
@@ -214,6 +222,190 @@
 				}
 			],
 			"sid": 719379701912959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 520745637348178,
+					"parameters": {
+						"object": "ighanif"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "ighanif",
+					"sid": 279728518590534,
+					"parameters": {
+						"size-pt": "26"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ighanif",
+					"sid": 391193246533956,
+					"parameters": {
+						"text": "\"Salvanse IG: @ha.qan_\""
+					}
+				}
+			],
+			"sid": 356719021282086
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 268096580020346,
+					"parameters": {
+						"object": "igaqil"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "igaqil",
+					"sid": 387825892706223,
+					"parameters": {
+						"size-pt": "26"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "igaqil",
+					"sid": 463320343336726,
+					"parameters": {
+						"text": "\"Qiqi IG: @qiqi_farrukh\""
+					}
+				}
+			],
+			"sid": 816489051669291
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 225030408598606,
+					"parameters": {
+						"object": "ighanif"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "ighanif",
+					"sid": 151291522038971,
+					"parameters": {
+						"size-pt": "20"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ighanif",
+					"sid": 221490954146898,
+					"parameters": {
+						"text": "\"Salvanse IG:\""
+					}
+				}
+			],
+			"sid": 822444537494890
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 879102273811683,
+					"parameters": {
+						"object": "igaqil"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "igaqil",
+					"sid": 394083724503532,
+					"parameters": {
+						"size-pt": "20"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "igaqil",
+					"sid": 521324705967394,
+					"parameters": {
+						"text": "\"Qiqi IG:\""
+					}
+				}
+			],
+			"sid": 645787268582168
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 916119732784133,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ighanif"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "open-url-in-new-window",
+					"objectClass": "Browser",
+					"sid": 415014073232871,
+					"parameters": {
+						"url": "\"https://www.instagram.com/ha.qan_/\"",
+						"tag": "\"Insta\""
+					}
+				}
+			],
+			"sid": 697081711660550
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 573150693662226,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "igaqil"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "open-url-in-new-window",
+					"objectClass": "Browser",
+					"sid": 732291648924647,
+					"parameters": {
+						"url": "\"https://www.instagram.com/qiqi_farrukh/\"",
+						"tag": "\"Insta\""
+					}
+				}
+			],
+			"sid": 975526074991851
 		}
 	],
 	"sid": 401253884188822

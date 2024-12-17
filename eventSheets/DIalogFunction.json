@@ -55,12 +55,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 390800613700171,
+					"sid": 626957078534265,
 					"parameters": {
 						"object-to-create": "TextBoard",
 						"layer": "2",
-						"x": "429",
-						"y": "600",
+						"x": "LayoutWidth/2",
+						"y": "(LayoutHeight/3+LayoutHeight/2)",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -68,20 +68,20 @@
 				{
 					"id": "set-scale",
 					"objectClass": "TextBoard",
-					"sid": 600323857599930,
+					"sid": 370279502002165,
 					"parameters": {
-						"scale": "4"
+						"scale": "4.2"
 					}
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 290325959714003,
+					"sid": 278430841244817,
 					"parameters": {
 						"object-to-create": "PressSpace",
 						"layer": "2",
-						"x": "525",
-						"y": "330",
+						"x": "1300",
+						"y": "870",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -89,12 +89,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 726085639851235,
+					"sid": 692311825834902,
 					"parameters": {
 						"object-to-create": "Speaker",
 						"layer": "2",
-						"x": "68.237043",
-						"y": "314.867048",
+						"x": "150",
+						"y": "600",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -102,12 +102,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 349084512203790,
+					"sid": 339212674291649,
 					"parameters": {
 						"object-to-create": "DialogText",
 						"layer": "2",
-						"x": "74",
-						"y": "383",
+						"x": "150",
+						"y": "700",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -154,12 +154,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 333838953897869,
+							"sid": 822972462138232,
 							"parameters": {
 								"object-to-create": "nelayan",
 								"layer": "1",
-								"x": "171",
-								"y": "360",
+								"x": "0",
+								"y": "550",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -167,12 +167,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 377523149704611,
+							"sid": 455261728478196,
 							"parameters": {
 								"object-to-create": "napoleon",
 								"layer": "1",
-								"x": "638",
-								"y": "200",
+								"x": "1708",
+								"y": "350",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -214,9 +214,9 @@
 								{
 									"id": "set-scale",
 									"objectClass": "napoleon",
-									"sid": 927611301204181,
+									"sid": 354059539863140,
 									"parameters": {
-										"scale": "0.5"
+										"scale": "0.7"
 									}
 								}
 							],
@@ -243,17 +243,17 @@
 								{
 									"id": "set-scale",
 									"objectClass": "napoleon",
-									"sid": 128610751377658,
+									"sid": 695239369751116,
 									"parameters": {
-										"scale": "0.2"
+										"scale": "0.3"
 									}
 								},
 								{
 									"id": "set-scale",
 									"objectClass": "nelayan",
-									"sid": 112839800864079,
+									"sid": 168258166468451,
 									"parameters": {
-										"scale": "0.8"
+										"scale": "1"
 									}
 								}
 							],

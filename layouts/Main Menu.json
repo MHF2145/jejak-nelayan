@@ -32,8 +32,8 @@
 					"world": {
 						"x": 0,
 						"y": 0,
-						"width": 854.8492881093683,
-						"height": 477.66704718090955,
+						"width": 1708,
+						"height": 960,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -76,10 +76,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 276,
-						"y": 299,
-						"width": 80,
-						"height": 80,
+						"x": 568,
+						"y": 579,
+						"width": 150,
+						"height": 150,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -122,10 +122,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 609,
-						"y": 294,
-						"width": 80,
-						"height": 80,
+						"x": 1225,
+						"y": 579,
+						"width": 150,
+						"height": 150,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -144,7 +144,7 @@
 						"text": "Play",
 						"enable-bbcode": true,
 						"font": "Story Milky",
-						"size": 30,
+						"size": 50,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -154,8 +154,8 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
@@ -201,10 +201,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 222,
-						"y": 355,
-						"width": 156,
-						"height": 66,
+						"x": 459,
+						"y": 716,
+						"width": 215,
+						"height": 98,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -223,7 +223,7 @@
 						"text": "QUIT",
 						"enable-bbcode": true,
 						"font": "Story Milky",
-						"size": 30,
+						"size": 50,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -233,8 +233,8 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
@@ -280,10 +280,178 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 554,
-						"y": 347,
-						"width": 143,
-						"height": 75,
+						"x": 1115,
+						"y": 716,
+						"width": 202,
+						"height": 107,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ighanif",
+					"properties": {
+						"text": "Salvanse IG:",
+						"enable-bbcode": true,
+						"font": "Retro Gaming",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 65,
+					"sid": 926009534241459,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 926009534241459,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 22,
+						"y": 82,
+						"width": 500,
+						"height": 60,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SocialMedia",
+					"properties": {
+						"text": "Our Social Media",
+						"enable-bbcode": true,
+						"font": "Retro Gaming",
+						"size": 38,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 66,
+					"sid": 933683740427604,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 933683740427604,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 5,
+						"y": 10,
+						"width": 523,
+						"height": 71,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "igaqil",
+					"properties": {
+						"text": "Qiqi IG:",
+						"enable-bbcode": true,
+						"font": "Retro Gaming",
+						"size": 24,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 67,
+					"sid": 996949866155282,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 996949866155282,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 22,
+						"y": 136,
+						"width": 500,
+						"height": 60,
 						"originX": 0,
 						"originY": 0,
 						"color": [

@@ -45,6 +45,14 @@
 			],
 			"actions": [
 				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 345021091740100,
+					"parameters": {
+						"db": "-15"
+					}
+				},
+				{
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 289983285213329,
@@ -634,12 +642,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 858706856103135,
+					"sid": 583012432211678,
 					"parameters": {
 						"object-to-create": "onDialog",
 						"layer": "0",
-						"x": "435.764563",
-						"y": "244.03496",
+						"x": "854",
+						"y": "480",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}

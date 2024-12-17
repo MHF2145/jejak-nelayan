@@ -272,6 +272,18 @@
 						"animation": "\"reeled\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 577000723512252,
+					"parameters": {
+						"audio-file": "Splash",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 315075479036354
@@ -386,15 +398,6 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "fishplaceholder",
-					"sid": 831973470209835,
-					"parameters": {
-						"animation": "\"Animation 3\"",
-						"from": "beginning"
-					}
 				}
 			],
 			"sid": 102089277856584
@@ -451,15 +454,6 @@
 						"variable": "RN",
 						"value": "0"
 					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "fishplaceholder",
-					"sid": 774647843093881,
-					"parameters": {
-						"animation": "\"Animation 2\"",
-						"from": "beginning"
-					}
 				}
 			],
 			"sid": 106798653181707
@@ -515,15 +509,6 @@
 					"parameters": {
 						"variable": "RN",
 						"value": "0"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "fishplaceholder",
-					"sid": 196121475282351,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
 					}
 				}
 			],
@@ -1152,6 +1137,14 @@
 						"variable": "Caught",
 						"value": "1"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 519542588738836,
+					"parameters": {
+						"tag": "\"\""
+					}
 				}
 			],
 			"sid": 873896393604662
@@ -1195,6 +1188,14 @@
 					"parameters": {
 						"variable": "Caught",
 						"value": "2"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 102739648838317,
+					"parameters": {
+						"tag": "\"\""
 					}
 				}
 			],
@@ -1240,6 +1241,14 @@
 						"variable": "Caught",
 						"value": "3"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 805896060919650,
+					"parameters": {
+						"tag": "\"\""
+					}
 				}
 			],
 			"sid": 997977664851864
@@ -1283,6 +1292,14 @@
 					"parameters": {
 						"variable": "Caught",
 						"value": "10"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 761979663611347,
+					"parameters": {
+						"tag": "\"\""
 					}
 				}
 			],
@@ -1352,12 +1369,21 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "fishplaceholder",
+					"sid": 831973470209835,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "spawn-another-object",
 					"objectClass": "fishplaceholder",
-					"sid": 528294099534220,
+					"sid": 608415672129527,
 					"parameters": {
 						"object": "Salmon",
-						"layer": "0",
+						"layer": "1",
 						"image-point": "0",
 						"create-hierarchy": false,
 						"template-name": "\"\""
@@ -1399,6 +1425,17 @@
 					}
 				},
 				{
+					"id": "flash",
+					"objectClass": "dapetikan",
+					"sid": 169006932923466,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.5",
+						"off-time": "0.5",
+						"duration": "10000.0"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "sht",
 					"sid": 302823993503628,
@@ -1434,12 +1471,21 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "fishplaceholder",
+					"sid": 774647843093881,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "spawn-another-object",
 					"objectClass": "fishplaceholder",
-					"sid": 748596776086399,
+					"sid": 644085315295342,
 					"parameters": {
 						"object": "Kerapu",
-						"layer": "0",
+						"layer": "1",
 						"image-point": "0",
 						"create-hierarchy": false,
 						"template-name": "\"\""
@@ -1481,6 +1527,17 @@
 					}
 				},
 				{
+					"id": "flash",
+					"objectClass": "dapetikan",
+					"sid": 747689751978677,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.5",
+						"off-time": "0.5",
+						"duration": "10000.0"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "kht",
 					"sid": 747554942134608,
@@ -1516,12 +1573,21 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "fishplaceholder",
+					"sid": 196121475282351,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "spawn-another-object",
 					"objectClass": "fishplaceholder",
-					"sid": 422509350551062,
+					"sid": 125140927473064,
 					"parameters": {
 						"object": "Tongkol",
-						"layer": "0",
+						"layer": "1",
 						"image-point": "0",
 						"create-hierarchy": false,
 						"template-name": "\"\""
@@ -1560,6 +1626,17 @@
 					"sid": 451863168512529,
 					"parameters": {
 						"text": "\"Yeay Kamu dapet Ikan Tongkol!\""
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "dapetikan",
+					"sid": 375216039962138,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.5",
+						"off-time": "0.5",
+						"duration": "10000.0"
 					}
 				},
 				{
@@ -1634,6 +1711,14 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 804416149831334,
+					"parameters": {
+						"db": "-15"
+					}
+				},
 				{
 					"id": "set-animation",
 					"objectClass": "Player",
@@ -1833,19 +1918,19 @@
 					],
 					"actions": [
 						{
+							"id": "set-scale",
+							"objectClass": "tomain",
+							"sid": 391892448866234,
+							"parameters": {
+								"scale": "1.2"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "pausetext",
 							"sid": 946077702384852,
 							"parameters": {
 								"text": "\"Balik ke main menu\""
-							}
-						},
-						{
-							"id": "set-scale",
-							"objectClass": "tomain",
-							"sid": 730862316896303,
-							"parameters": {
-								"scale": "1.2"
 							}
 						}
 					],
@@ -1921,6 +2006,14 @@
 							"id": "set-scale",
 							"objectClass": "resume",
 							"sid": 967537570959091,
+							"parameters": {
+								"scale": "1"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "tomain",
+							"sid": 370722767446337,
 							"parameters": {
 								"scale": "1"
 							}
@@ -2086,6 +2179,206 @@
 						}
 					],
 					"sid": 874425110711536
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 305239922282134,
+							"parameters": {
+								"object": "ighanif"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-size",
+							"objectClass": "ighanif",
+							"sid": 883041841912050,
+							"parameters": {
+								"size-pt": "26"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ighanif",
+							"sid": 996021588739505,
+							"parameters": {
+								"text": "\"Salvanse IG: @ha.qan_\""
+							}
+						}
+					],
+					"sid": 248861094311782
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 181177723282574,
+							"parameters": {
+								"object": "igaqil"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-size",
+							"objectClass": "igaqil",
+							"sid": 589865007396788,
+							"parameters": {
+								"size-pt": "26"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "igaqil",
+							"sid": 657376943583166,
+							"parameters": {
+								"text": "\"Qiqi IG: @qiqi_farrukh\""
+							}
+						}
+					],
+					"sid": 359213113651757
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 549676806246817,
+							"parameters": {
+								"object": "ighanif"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-size",
+							"objectClass": "ighanif",
+							"sid": 697737968940132,
+							"parameters": {
+								"size-pt": "20"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ighanif",
+							"sid": 360886438658073,
+							"parameters": {
+								"text": "\"Salvanse IG:\""
+							}
+						}
+					],
+					"sid": 345168567824636
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 159473751957527,
+							"parameters": {
+								"object": "igaqil"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-size",
+							"objectClass": "igaqil",
+							"sid": 112105019284378,
+							"parameters": {
+								"size-pt": "20"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "igaqil",
+							"sid": 152768744667966,
+							"parameters": {
+								"text": "\"Qiqi IG:\""
+							}
+						}
+					],
+					"sid": 647655206054041
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 290927993462571,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ighanif"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 987147493856578,
+							"parameters": {
+								"layer": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 760721571027759,
+							"parameters": {
+								"url": "\"https://www.instagram.com/ha.qan_/\"",
+								"tag": "\"Insta\""
+							}
+						}
+					],
+					"sid": 377362865398987
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 499950028246036,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "igaqil"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 894220324338855,
+							"parameters": {
+								"layer": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 785434397680852,
+							"parameters": {
+								"url": "\"https://www.instagram.com/qiqi_farrukh/\"",
+								"tag": "\"Insta\""
+							}
+						}
+					],
+					"sid": 907120558756989
 				}
 			],
 			"sid": 864567269187096
@@ -2164,10 +2457,10 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 446501883982238,
+							"sid": 334186237414868,
 							"parameters": {
 								"first-value": "Tongkolfish",
-								"comparison": 0,
+								"comparison": 4,
 								"second-value": "5"
 							}
 						},
@@ -2217,6 +2510,17 @@
 							"sid": 407096904421750,
 							"parameters": {
 								"opacity": "100"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "sudahTercapai",
+							"sid": 529160110483459,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.5",
+								"off-time": "0.5",
+								"duration": "10000.0"
 							}
 						}
 					],
@@ -2292,6 +2596,17 @@
 							"parameters": {
 								"opacity": "100"
 							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "sudahTercapai",
+							"sid": 667735604704222,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.5",
+								"off-time": "0.5",
+								"duration": "10000.0"
+							}
 						}
 					],
 					"sid": 304131080637752
@@ -2365,6 +2680,25 @@
 							"sid": 457421877673109,
 							"parameters": {
 								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "sudahTercapai",
+							"sid": 897302305325817,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "sudahTercapai",
+							"sid": 835315004521195,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.5",
+								"off-time": "0.5",
+								"duration": "10000.0"
 							}
 						}
 					],
